@@ -1,4 +1,8 @@
 
+import os
+
+dbot_token = os.environ.get("Blabber-token")
+
 from transformers import AutoModelForCausalLM, AutoTokenizer
 import torch
 
@@ -60,4 +64,4 @@ async def on_message(message):
         await message.channel.send("you can call me whatever")
     '''
 
-client.run("ODUwNDc5NzAzMTM0ODMwNjMy.YLqU8g.snAnC9sz6a-zNcJ_nAJGkSlcFdA")
+client.run(dbot_token)
