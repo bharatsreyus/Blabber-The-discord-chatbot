@@ -36,6 +36,7 @@ async def on_message(message):
     #for step in range(5):
     if message.content == "-bot reconnect":
         step = 0
+        chat_history_ids = []
     
     elif message.content.startswith("-bot"):
         
